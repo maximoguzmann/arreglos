@@ -22,5 +22,6 @@ Manga+Guzmán
 - Cree el remote add origin para el nuevo repositorio
 - Utilice git push --all para subir todos los datos, de ambas ramas, al repositorio
 - Cree un README.md en el repositorio y lo traje a mi proyecto utilizando git pull
-- Luego de esto, utilizaré git add para agregarlo a mi proyecto
-- 
+- Luego de esto, utilizaré git add para subirlo al proyecto
+- Continuado por un git commit, el cual llamare Readme
+- Terminando con un git push --all para poder subir todo al repositorio
