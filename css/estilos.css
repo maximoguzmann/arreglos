@@ -137,6 +137,13 @@ body {
     width: 20rem;
     border: solid 5px #E0DFDD;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.recomienda__img:hover {
+    transform: scale(1.15);
 }
 
 
@@ -333,9 +340,6 @@ body {
 .manga__art {
     height: 85%;
     width: 75%;
-    background-color: #F7F3F2;
-    border: solid #E0DFDD 5px;
-    border-radius: 10px;
     text-align: center;
 }
 
@@ -371,9 +375,25 @@ body {
     grid-area: man8;
 }
 
+.art-img {
+    height: 100%;
+    width: 100%;
+    background-color: #F7F3F2;
+    border: solid #E0DFDD 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
 .manga__art--img {
     width: 100%;
     height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.manga__art--img:hover {
+    transform: scale(1.15);
 }
 
 .manga__art--h2 {
