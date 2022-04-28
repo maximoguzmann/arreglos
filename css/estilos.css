@@ -1,0 +1,839 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    background-image: url(https://www.ivrea.com.ar/img/bg.jpg);
+}
+
+/* Inicio CSS para HTML Index */
+
+.cabeza {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FFAD2C;
+    border-bottom: solid #B6500E 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabeza__hamburguesa {
+    display: none;
+}
+
+.logo {
+    width: 70px;
+    height: 70px; 
+    margin-top: 10px;
+}
+
+.cabeza-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.lista-a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 13px;
+    color: black;
+}
+
+.item__oculto {
+    display: none;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-rows: 100vh 625px 200px 1fr;
+    grid-template-columns: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.editorial {
+    height: 32rem;
+    width: 100%;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.editorial-div {
+    width: 380px;
+    height: 100%;
+    background-color: #F7F3F2;
+    text-align: center;
+    border: solid #E0DFDD 5px;
+    border-radius: 10px;
+}
+
+.editorial-img {
+    width: 200px;
+    height: 200px;
+}
+
+.editorial-p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.mangakas {
+    height: 150px;
+    width: 100%;
+}
+
+.mangakas-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.recomienda {
+    width: 100%;
+    height: 40rem;
+    margin-top: 30px;
+}
+
+.recomienda__titulo {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.recomienda__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.recomienda__img {
+    height: 30rem;
+    width: 20rem;
+    border: solid 5px #E0DFDD;
+    border-radius: 10px;
+}
+
+
+.pie {
+    width: 100%;
+    height: 100px;
+    background-color: #FFAD2C;
+    border-top: solid 6px #B6500E;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pie-lista {
+    list-style: none;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.redes {
+    height: 40px;
+    width: 40px;
+    margin-top: 28px;
+    margin-right: 20px;
+}
+
+/* Fin de CSS para HTML Index */
+
+/* Inicio de CSS para HTML Info */
+
+.info-h1 {
+    display: block;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 160px;   
+}
+
+.info {
+    width: 100%;
+    padding: 0px 50px 35px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60vh 1fr 1fr;
+    grid-template-areas: 
+    "iframe text"
+    "banner banner"
+    "img1 img2";
+    
+    justify-content: space-evenly;
+
+    column-gap: 95px;
+    row-gap: 50px;
+}
+
+.info__iframe {
+    height: 60vh;
+    grid-area: iframe;
+}
+
+.info__text {
+    height: 60vh;
+    grid-area: text;    
+}
+
+.info__banner {
+    grid-area: banner;
+}
+
+.info__banner--img {
+    width: 100%;
+    height: 100%;
+}
+
+.info__img--img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.info__img--1 {
+    grid-area: img1;
+}
+
+.info__img--2 {
+    grid-area: img2;
+}
+
+/* Fin de CSS para HTML Info */
+/* Inicio de CSS para HTML Sucursales */
+
+.sucursal__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65vh 1fr;
+}
+
+.sucursal {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sucursal__titulo {
+    padding-left: 160px;
+}
+
+.sucursal__h1 {
+    display: block;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: tit;
+}
+
+.sucursal__mapa {
+    height: 500px;
+    width: 91%;
+    padding-left: 160px;
+    grid-area: mapa;
+}
+
+
+.local {
+    width: 100%;
+    height: 45rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.local__div {
+    height: 100%;
+    width: 35%;
+    background-color: #F7F3F2;
+    border: solid #E0DFDD 5px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.local__div img {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.local__div--span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Fin de CSS para HTML Sucursales */
+/* Inicio de CSS para HTML Merch */
+
+.merch__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20vh 1fr 1fr;
+    grid-template-areas: 
+    "tit tit tit tit"
+    "man1 man2 man3 man4"
+    "man5 man6 man7 man8";
+
+    justify-items: center;
+    row-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.merch {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    grid-area: tit;
+}
+
+.merch__h1 {
+    display: block;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 160px;
+}
+
+.merch__lista {
+    height: 100px;
+    list-style: none;
+    margin-top: 100px;
+    margin-right: 160px;
+}
+
+.manga__art {
+    height: 85%;
+    width: 75%;
+    background-color: #F7F3F2;
+    border: solid #E0DFDD 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.manga__art--1 {
+    grid-area: man1;
+}
+
+.manga__art--2 {
+    grid-area: man2;
+}
+
+.manga__art--3 {
+    grid-area: man3;
+}
+
+.manga__art--4 {
+    grid-area: man4;
+}
+
+.manga__art--5 {
+    grid-area: man5;
+}
+
+.manga__art--6 {
+    grid-area: man6;
+}
+
+.manga__art--7 {
+    grid-area: man7;
+}
+
+.manga__art--8 {
+    grid-area: man8;
+}
+
+.manga__art--img {
+    width: 100%;
+    height: 100%;
+}
+
+.manga__art--h2 {
+    text-align: center;
+    font-size: 150%;
+    padding-bottom: 15px;
+}
+
+.manga__art--button {
+    width: 150px;
+    height: 30px;
+}
+
+/* Fin de CSS para HTML Merch */
+/* Inicio de CSS para HTML Contacto */
+
+.contacto__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15vh 1fr;
+    grid-template-areas: 
+    "tit tit"
+    "nom men";
+
+    justify-items: center;
+    margin-bottom: 9rem;
+}
+
+.contacto__titulo {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 160px;
+    grid-area: tit;
+}
+
+.contacto__h1 {
+    font-size: 50px;
+}
+
+.contacto__div {
+    height: 100%;
+    width: 70%;
+    margin-left: 45px;
+}
+
+.contacto__lista {
+    list-style: none;
+}
+
+.contacto__input {
+    width: 70%;
+    height: 30px;
+}
+
+.contacto__div--nom {
+    grid-area: nom;
+}
+
+.contacto__div--men {
+    grid-area: men;
+}
+
+.mensaje {
+    display: flex;
+    padding-bottom: 15px;
+    padding-top: 40px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.comentario {
+    width: 100%;
+}
+
+#mensaje__enviar {
+    margin-top: 10px;
+    width: 80px;
+    height: 25px;
+}
+
+/* Fin de CSS para HTML Contacto */
+
+/* Inicio de Media Queries Tablet */
+@media screen and (max-width: 1023px) {
+    .cabeza {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Inicio Media Queries Index */
+
+    .grid {
+        grid-template-rows: 600px 625px 150px 1fr;
+        grid-template-columns: 100%;
+    }
+
+
+    .banner {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+
+    .editorial {
+        height: 550px;
+        padding-bottom: 3rem;
+        justify-content: space-around;
+        gap: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .editorial-div {
+        overflow: scroll;
+    }
+
+    .editorial-ovni {
+        display: none;
+    }
+
+
+    .mangakas {
+        height: 100%;
+        margin-top: -24px;
+    }
+
+    .mangakas-img {
+        object-fit: contain;
+    }
+
+
+    .recomienda__titulo {
+        font-size: 30px;
+    }
+
+    .recomienda__grid {
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+    }
+
+    .recomienda__img--3 {
+        display: none;
+    }
+
+    .recomienda__img--4 {
+        display: none;
+    }
+
+    /* Fin Media Queries Index */
+    /* Inicio Media Queries Info */
+
+    .info {
+        grid-template-columns: 100%;
+        grid-template-rows: 500px 575px 400px 1fr 1fr;
+        grid-template-areas: 
+        "iframe"
+        "text"
+        "banner"
+        "img1"
+        "img2";
+    }
+
+    .info-h1 {
+        margin-left: calc(50px - 160px);
+    }
+
+    .info__iframe {
+        height: 500px;
+    }
+
+    .info__banner {
+        width: 100%;
+        height: 400px;
+    }
+
+    /* Fin Media Queries Info */
+    /* Inicio Media Queries Sucursal */
+
+    .sucursal__h1 {
+        margin-left: calc(50px - 160px);
+    }
+
+    .sucursal__mapa {
+        width: 100%;
+        height: 400px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .local {
+        max-height: 500px;
+        margin-top: -100px;        
+    }
+
+    .local__div {
+        width: 40%;
+    }
+
+    /* Fin Media Queries Sucursal */
+    /* Inicio Media Queries Merch */
+
+    .merch__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 20vh 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "tit tit"
+        "man1 man2"
+        "man3 man4"
+        "man5 man6"
+        "man7 man8";
+
+        row-gap: 3rem;
+    }
+
+    .merch__h1 {
+        margin-left: calc(50px - 160px);
+    }
+
+    .merch__lista {
+        margin-right: 25px;
+    }
+
+    .manga__art--h2 {
+        font-size: 120%;
+    }
+
+    .manga__art--button {
+        width: 50%;
+        height: 10%;
+        font-size: 12px;
+    }
+
+    /* Fin Media Queries Merch */
+    /* Inicio Media Queries Contacto */
+
+    .contacto__grid {
+        grid-template-columns: 100%;
+        grid-template-rows: 10vh 1fr 1fr;
+        grid-template-areas: 
+        "tit"
+        "nom"
+        "men";
+
+        margin-bottom: 3rem;
+    }
+
+    .comentario {
+        width: 100%;
+    }
+
+    /* Fin Media Queries Contacto */
+}
+
+/* Fin Media Queries Tablet */
+/* Inicio Media Queries Celular */
+
+@media screen and (max-width:599px) {
+    .cabeza {
+        flex-direction: row;
+    }
+
+    .abrir__hamburguesa {
+        text-decoration: none;
+    }
+
+    .cabeza__hamburguesa {
+        display: block;
+        font-size: 32px;
+        color: black;
+    }
+
+    #sidebar {
+        background-color: #e0e0e0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 100vh;
+        width: 80%;
+        max-width: 350px;
+        padding: 1rem;
+
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+    }
+
+    #sidebar .cabeza-lista {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #sidebar:target {
+        transform: translateX(0);
+    }
+
+    .item__oculto {
+        display: block;
+    }
+
+    /* Inicio de Media Queries Index */
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px;
+        justify-items: center;
+    }
+
+
+    .banner {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+    }
+
+
+    .editorial {
+        height: 100%;
+        width: 400px;
+        padding-bottom: 100px;
+    }
+
+    .editorial-img {
+        height: 140px;
+        width: 140px;
+    }
+
+    .ivrea {
+        font-size: 25px;
+    }
+
+    .editorial-p {
+        font-size: 15px;
+    }
+
+    .editorial-panini {
+        display: none;
+    }
+
+
+    .mangakas {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .mangakas-img {
+        height: 100%;
+    }
+
+
+    .recomienda {
+        margin-bottom: -10px;
+    }
+
+    .recomienda__titulo {
+        font-size: 20px
+    }
+
+    .recomienda__img--2 {
+        display: none;
+    }
+
+    /* Fin de Media Queries Index */
+    /* Inicio de Media Queries Info */
+
+    .info {
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 900px 1fr 1fr 1fr;
+    }
+
+    .info-h1 {
+        font-size: 30px;
+    }
+
+    .info__iframe {
+        width: auto;
+        height: 250px;
+    }
+
+    .info__text {
+        font-size: 15px;
+    }
+
+    .info__banner {
+        width: 100%;
+        height: 280px;
+    }
+
+    /* Fin de Media Queries Info */
+    /* Inicio de Media Queries Sucursales */
+
+    .sucursal__grid {
+        grid-template-rows: 1fr 500px;
+    }
+
+    .sucursal__h1 {
+        font-size: 30px;
+    }
+
+    .sucursal__mapa {
+        height: 400px;
+    }
+
+    .local__div--1 {
+        width: 80%;
+        margin-top: 60px;
+        overflow: scroll;
+    }
+
+    .local__div--2 {
+        display: none;
+    }
+
+    /* Fin de Media Queries Sucursales */
+    /* Inicio Media Queries Merch */
+    
+    .merch__grid {
+        grid-template-columns: 100%;
+        grid-template-rows: 20vh 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "tit"
+        "man1"
+        "man2"
+        "man3"
+        "man4"
+        "man5"
+        "man6"
+        "man7"
+        "man8";
+    }
+
+    .merch__h1 {
+        font-size: 200%;
+    }
+
+    /* Fin Media Queries Merch */
+    /* Inicio Media Queries Contacto */
+
+    .contacto__grid {
+        grid-template-rows: 10vh 1fr 500px;
+        margin-left: -40px;
+    }
+
+    .contacto__h1 {
+        font-size: 200%;
+        margin-left: -70px;
+    }
+
+    /* Fin Media Queries Contacto */
+}
+
+/* Fin Media Queries Celular */

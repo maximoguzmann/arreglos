@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e0d0b4a478.js" crossorigin="anonymous"></script>
+    
+    <title>Sucursales</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="cabeza">
+            <div>
+                <a href="../index.html">
+                    <img class="logo" src="../img/logo.png" alt="logo">
+                </a>
+            </div>
+            <a class="abrir__hamburguesa" href="#sidebar">
+                <i class="cabeza__hamburguesa fas fa-bars"></i>
+            </a>
+            <div id="sidebar">
+                <ul class="cabeza-lista">
+                    <li><a class="lista-a" href="../index.html">Inicio</a></li>
+                    <li><a class="lista-a" href="info.html">Info</a></li>
+                    <li><a class="lista-a" href="sucursales.html">Sucursales</a></li>
+                    <li><a class="lista-a" href="merch.html">Mangas & Merch</a></li>
+                    <li><a class="lista-a" href="contacto.html">Contacto</a></li>
+                    <li class="item__oculto"><a class="lista-a" href="#">Cerrar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="sucursal__grid">
+        <section class="sucursal">
+
+            <div class="sucursal__titulo">
+                <h1 class="sucursal__h1">Nuestras sucursales</h1>
+            </div>
+
+            <div class="sucursal__mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d105119.69434440407!2d-58.76432854780283!3d-34.57910824063715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sla%20revisteria!5e0!3m2!1ses-419!2sar!4v1649173685733!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
+        </section>
+    
+        <section class="local">
+    
+            <div class="local__div local__div--1">
+                <img src="../img/local1.jpg" alt="Local">
+                <h2>Belgrano</h2>
+                <p><span class="local__div--span">Dirección:</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, quas?</p>
+                <p><span class="local__div--span">Teléfono:</span>+54 9 11 1111 2222 / +54 9 11 3333 4444</p>
+                <p><span class="local__div--span">Horarios:</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, rerum.</p>
+            </div>
+    
+            <div class="local__div local__div--2">
+                <img src="../img/local2.jpg" alt="Local">
+                <h2>Microcentro</h2>
+                <p><span class="local__div--span">Dirección:</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, quas?</p>
+                <p><span class="local__div--span">Teléfono:</span>+54 9 11 1111 2222 / +54 9 11 3333 4444</p>
+                <p><span class="local__div--span">Horarios:</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, rerum.</p>
+            </div>
+    
+        </section>
+    </main>
+
+    <footer class="pie">
+        <form action="">
+            <ul class="pie-lista">
+                <li>
+                    <label for="newsletter">Newsletter:</label>
+                </li>
+                <li>
+                    <input type="text" required id="newsletter" name="newsletter" placeholder="example@email.com">
+                    <button>Enviar..</button>
+                </li>
+            </ul>
+        </form>
+
+        <div>
+            <a href="https://www.instagram.com" target="_blank"><img class="redes"  src="../img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.whatsapp.com" target="_blank"><img class="redes" src="../img/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.facebook.com" target="_blank"><img class="redes" src="../img/facebook.png" alt="Facebook"></a>
+        </div>
+    </footer>
+
+</body>
+</html>

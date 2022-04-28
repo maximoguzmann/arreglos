@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e0d0b4a478.js" crossorigin="anonymous"></script>
+    
+    <title>Inicio</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="cabeza">
+            <div>
+                <a href="index.html">
+                    <img class="logo" src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <a class="abrir__hamburguesa" href="#sidebar">
+                <i class="cabeza__hamburguesa fas fa-bars"></i>
+            </a>
+            <div id="sidebar">
+                <ul class="cabeza-lista">
+                    <li><a class="lista-a" href="index.html">Inicio</a></li>
+                    <li><a class="lista-a" href="pages/info.html">Info</a></li>
+                    <li><a class="lista-a" href="pages/sucursales.html">Sucursales</a></li>
+                    <li><a class="lista-a" href="pages/merch.html">Mangas & Merch</a></li>
+                    <li><a class="lista-a" href="pages/contacto.html">Contacto</a></li>
+                    <li class="item__oculto">
+                        <a class="lista-a" href="#">Cerrar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="grid">
+        <section class="banner">
+            <img src="img/banner.jpg" alt="">
+        </section>
+    
+        <section class="editorial">
+            <div class="editorial-div">
+                <img class="editorial-img" src="img/ivrea.jpg" alt="Ivrea">
+                <h2 class="ivrea">Editorial Ivrea</h2>
+                <p class="editorial-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint pariatur accusamus optio nesciunt ab in repellendus voluptate sapiente doloribus? Veritatis, temporibus. Sed assumenda error officia sapiente, distinctio eveniet voluptas esse omnis! Sit ab doloremque totam, quae quis ipsam! Numquam, molestiae?</p>
+            </div>
+            <div class="editorial-div editorial-panini">
+                <img class="editorial-img" src="img/panini.png" alt="Panini">
+                <h2>Editorial Panini</h2>
+                <p class="editorial-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum illo nesciunt est qui provident, accusantium nihil nisi dolor officia quae, aliquam possimus et a placeat deleniti, asperiores eveniet repellendus? Assumenda enim doloremque possimus ipsum totam cum iure nisi cupiditate eum.</p>
+            </div>
+            <div class="editorial-div editorial-ovni">
+                <img class="editorial-img" src="img/ovni.png" alt="Ovni">
+                <h2>Editorial Ovni</h2>
+                <p class="editorial-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, placeat! Possimus suscipit ea culpa corrupti explicabo, error architecto adipisci nemo quibusdam ad aut incidunt consequuntur debitis aperiam! Ipsa commodi odio provident molestias, ad accusantium facilis debitis corrupti harum, repellat quos!</p>
+            </div>
+        </section>
+    
+        <section class="mangakas">
+            <div>
+                <img class="mangakas-img" src="img/mangakas.png" alt="Mangakas">
+            </div>
+        </section>
+    
+        <section class="recomienda">
+            <div class="recomienda__titulo">
+                <h1>RECOMENDACIONES DEL DÍA</h1>
+            </div>
+            <div class="recomienda__grid">
+                <img class="recomienda__img recomienda__img--1" src="img/manga2.jpg" alt="Dragon Ball Super">
+                <img class="recomienda__img recomienda__img--2" src="img/manga4.jpeg" alt="Demon Slayer">
+                <img class="recomienda__img recomienda__img--3" src="img/manga6.jpg" alt="One Piece">
+                <img class="recomienda__img recomienda__img--4" src="img/manga8.png" alt="Naruto">
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <form action="">
+            <ul class="pie-lista">
+                <li>
+                    <label for="newsletter">Newsletter:</label>
+                </li>
+                <li>
+                    <input type="text" required id="newsletter" name="newsletter" placeholder="example@email.com">
+                    <button>Enviar..</button>
+                </li>
+            </ul>
+        </form>
+
+        <div>
+            <a href="https://www.instagram.com" target="_blank"><img class="redes"  src="img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.whatsapp.com" target="_blank"><img class="redes" src="img/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.facebook.com" target="_blank"><img class="redes" src="img/facebook.png" alt="Facebook"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
