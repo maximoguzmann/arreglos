@@ -304,7 +304,7 @@ body {
 .merch__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 20vh 1fr 1fr;
+    grid-template-rows: 100% 100% 100%;
     grid-template-areas: 
     "tit tit tit tit"
     "man1 man2 man3 man4"
@@ -317,7 +317,7 @@ body {
 
 .merch {
     width: 100%;
-    height: 20vh;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     grid-area: tit;
@@ -339,9 +339,13 @@ body {
 }
 
 .manga__art {
-    height: 85%;
-    width: 75%;
+    height: 100%;
+    width: 100%;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .manga__art--1 {
@@ -377,8 +381,8 @@ body {
 }
 
 .art-img {
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     background-color: #F7F3F2;
     border: solid #E0DFDD 5px;
     border-radius: 10px;
@@ -620,7 +624,7 @@ body {
 
     .merch__grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 20vh 1fr 1fr 1fr 1fr;
+        grid-template-rows: 20vh 100% 100% 100% 100%;
         grid-template-areas: 
         "tit tit"
         "man1 man2"
@@ -645,8 +649,8 @@ body {
     }
 
     .manga__art--button {
-        width: 50%;
-        height: 10%;
+        width: 40%;
+        height: 6%;
         font-size: 12px;
     }
 
@@ -889,6 +893,10 @@ body {
         "man8";
     }
 
+    #newsletter {
+        width: 90%;
+    }
+
     .merch__h1 {
         font-size: 200%;
     }
@@ -903,7 +911,7 @@ body {
 
     .contacto__h1 {
         font-size: 200%;
-        margin-left: -70px;
+        margin-left: -40px;
     }
 
     /* Fin Media Queries Contacto */
