@@ -664,6 +664,29 @@ body {
         flex-direction: row;
     }
 
+    .pie {
+        margin-top: 0;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .pie-lista {
+        font-size: 15px;
+    }
+
+    #newsletter {
+        height: 100%;
+        width: 70%;
+    }
+
+    .redes {
+        width: 30px;
+        max-width: 25px;
+        height: 30px;
+        max-height: 25px;
+        margin-right: 10px;
+    }
+
     .abrir__hamburguesa {
         text-decoration: none;
     }
