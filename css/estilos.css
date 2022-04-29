@@ -188,7 +188,7 @@ body {
     padding: 0px 50px 35px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50vh 1fr 1fr;
+    grid-template-rows: 100% 1fr 1fr;
     grid-template-areas: 
     "iframe text"
     "banner banner"
@@ -206,7 +206,7 @@ body {
 }
 
 .info__text {
-    height: 60vh;
+    height: 100%;
     grid-area: text;
 }
 
