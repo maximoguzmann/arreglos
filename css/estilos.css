@@ -730,22 +730,26 @@ body {
     /* Inicio de Media Queries Index */
 
     .grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 300px;
+        grid-template-columns: 100%;
+        grid-template-rows: 18vh 500px 100px;
         justify-items: center;
     }
 
 
     .banner {
+        margin-bottom: 0;
+    }
+
+    .banner img {
         width: 100%;
-        height: auto;
-        overflow: visible;
+        height: 20vh;
     }
 
 
     .editorial {
         height: 100%;
-        width: 400px;
+        width: 100%;
+        margin-top: 15%;
         padding-bottom: 100px;
     }
 
@@ -768,22 +772,32 @@ body {
 
 
     .mangakas {
-        height: 100%;
+        height: 100px;
         width: 100%;
         object-fit: contain;
+        margin-top: 0;
+        background-color: black;
     }
 
     .mangakas-img {
-        height: 100%;
+        height: 100px;
+        width: 100%;
     }
 
 
     .recomienda {
-        margin-bottom: -10px;
+        margin-bottom: 0;
+        margin-top: 1rem;
     }
 
     .recomienda__titulo {
         font-size: 20px
+    }
+
+    .recomienda__img--1 {
+        /* height: 100%;
+        width: 100%;
+        max-width: 90%; */
     }
 
     .recomienda__img--2 {
