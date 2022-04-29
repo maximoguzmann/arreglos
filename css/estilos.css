@@ -201,7 +201,7 @@ body {
 }
 
 .info__iframe {
-    height: 100%;
+    height: 550px;
     grid-area: iframe;
 }
 
@@ -239,12 +239,15 @@ body {
 .sucursal__grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 65vh 1fr;
+    grid-template-rows: 100% 100%;
+
+    margin: 0 50px 35px 50px;
+    row-gap: 3rem;
 }
 
 .sucursal {
     width: 100%;
-    height: 65vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -263,19 +266,16 @@ body {
 
 .sucursal__mapa {
     height: 500px;
-    width: 91%;
-    padding-left: 160px;
+    width: 100%;
     grid-area: mapa;
 }
 
 
 .local {
     width: 100%;
-    height: 45rem;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .local__div {
@@ -289,6 +289,7 @@ body {
 
 .local__div img {
     width: 100%;
+    height: auto;
     padding-bottom: 15px;
 }
 
@@ -567,6 +568,7 @@ body {
 
     .info-h1 {
         margin-left: calc(50px - 160px);
+        font-size: 40px;
     }
 
     .info__iframe {
@@ -585,24 +587,32 @@ body {
     /* Fin Media Queries Info */
     /* Inicio Media Queries Sucursal */
 
+    .sucursal__grid {
+        grid-template-columns: 100%;
+        grid-template-rows: 100% 100%;
+    }
+
     .sucursal__h1 {
         margin-left: calc(50px - 160px);
+        font-size: 40px;
     }
 
     .sucursal__mapa {
         width: 100%;
-        height: 400px;
-        padding-right: 50px;
-        padding-left: 50px;
+        height: 35vh;
     }
 
     .local {
-        max-height: 500px;
-        margin-top: -100px;        
+        height: 100%;        
     }
 
     .local__div {
-        width: 40%;
+        width: 48%;
+        overflow: scroll;
+    }
+
+    .local__div img {
+        width: 100%;
     }
 
     /* Fin Media Queries Sucursal */
@@ -623,6 +633,7 @@ body {
 
     .merch__h1 {
         margin-left: calc(50px - 160px);
+        font-size: 40px;
     }
 
     .merch__lista {
@@ -651,6 +662,10 @@ body {
         "men";
 
         margin-bottom: 3rem;
+    }
+
+    .contacto__h1 {
+        font-size: 40px;
     }
 
     .comentario {
@@ -833,7 +848,9 @@ body {
     /* Inicio de Media Queries Sucursales */
 
     .sucursal__grid {
-        grid-template-rows: 1fr 500px;
+        grid-template-columns: 100%;
+        grid-template-rows: 100% 100%;
+        margin: 0 2rem 2rem 2rem;
     }
 
     .sucursal__h1 {
@@ -841,12 +858,12 @@ body {
     }
 
     .sucursal__mapa {
-        height: 400px;
+        height: 300px;
     }
 
     .local__div--1 {
-        width: 80%;
-        margin-top: 60px;
+        height: 100%;
+        width: 90%;
         overflow: scroll;
     }
 
